@@ -4,7 +4,7 @@
   "description": "Angular manual minimal setup. ",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base dist/"
+    "start": "node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
      "@angular/common": "^4.0.0",
@@ -12,6 +12,7 @@
     "@angular/core": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "4.0.0",
     "@types/node": "^7.0.22"
   },
   "repository": {
