@@ -4,20 +4,17 @@
   "description": "Angular manual minimal setup. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --content-base dist/",
+    "build": "webpack",
+    "build-verbose": "webpack --display-error-details"
   },
   "dependencies": {
-    "@angular/common": "^4.3.6",
-    "@angular/compiler": "^4.3.6",
-    "@angular/core": "^4.3.6",
-    "@angular/forms": "^4.3.6",
-    "@angular/http": "^4.3.6",
-    "@angular/platform-browser": "^4.3.6",
-    "@angular/platform-browser-dynamic": "^4.3.6",
-    "@angular/router": "^4.3.6",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14"
+     "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@types/node": "^7.0.22"
   },
   "repository": {
     "type": "git",
@@ -30,11 +27,16 @@
   },
   "homepage": "https://github.com/peicap/angular-minimalist#readme",
   "devDependencies": {
-    "awesome-typescript-loader": "^3.2.3",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "html-loader": "^0.5.1",
-    "html-webpack-plugin": "^2.30.1",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.1.2",
+    "core-js": "^2.4.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
     "raw-loader": "^0.5.1",
-    "webpack": "^3.6.0"
+    "rxjs": "^5.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.4.2",
+    "zone.js": "^0.8.4"
   }
 }
