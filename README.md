@@ -1,4 +1,4 @@
-[![Angular Logo](./logo-angular.jpg)](https://angular.io/)
+[![Angular Logo](https://angular.io/assets/images/logos/angular/angular.png)](https://angular.io/)
 # Introduction
 
 Build your Angular(+4) with minimal setup using Webpack(+3.1.0), Typescript(2.4.5).  
@@ -6,6 +6,8 @@ Build your Angular(+4) with minimal setup using Webpack(+3.1.0), Typescript(2.4.
 Currently runs with:
 
 - Angular v4.3.5
+- Webpack v3.1.0
+- TypeScript v2.2.1
 
 With this sample, you can :
 
