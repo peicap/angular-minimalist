@@ -4,9 +4,7 @@
   "description": "Angular manual minimal setup. ",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base dist/",
-    "build": "webpack",
-    "build-verbose": "webpack --display-error-details"
+    "start": "webpack-dev-server --content-base dist/"
   },
   "dependencies": {
      "@angular/common": "^4.0.0",

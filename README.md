@@ -1,75 +1,45 @@
-![Angular Minimalist](https://angular.io/assets/images/logos/angular/angular.png)
+[![Angular Logo](./logo-angular.jpg)](https://angular.io/)
+# Introduction
 
-# Angular Minimalist Manual Setup 
-> Less config, less hassle.
+Build your Angular(+4) with minimal setup using Webpack(+3.1.0), Typescript(2.4.5).  
 
-An angular manual setup that can be used in small projects. 
+Currently runs with:
 
-[![Travis Build Status][build-badge]][build]
-[![Dependencies Status][dependencyci-badge]][dependencyci]
-[![Make a pull request][prs-badge]][prs]
-[![Apache 2 License][license-badge]][license]
-[![Donate][donate-badge]][donate]
+- Angular v4.3.5
 
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
+With this sample, you can :
 
+- Run your app in a local development environment with Webpack
+- Run your app in a production environment
 
-### Prerequisites
-First you need [NodeJs](https://nodejs.org), [Angular4](https://angular.io) to be installed before you can do anything with this setup.
+## Getting Started
 
-## Installing / Getting started
-First we need to install webpack-dev-server globally using npm so we can run the server. 
-```shell
-$ npm install --global webpack-dev-server
+Clone this repository locally :
+
+``` bash
+git clone https://github.com/peicap/angular-minimalist
 ```
 
-Then install all the dependencies for the setup to work
-```
-$ npm install 
-```
-## Developing
+Install dependencies with npm :
 
-### Built With
-This setup is built with 
-* Angular4 
-* Webpack
-* TypeScript
-
-## Versioning
-
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
-
-```shell
-Give an example
+``` bash
+npm install
 ```
 
-## Style guide
+## To build for development
 
-Explain your code style and show how to check it.
+- **in a terminal window** -> npm start  
 
-## Api Reference
+Alright! You can use your Angular4 + Webpack app in a local development environment with hot reload!
+## Included Commands
 
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
+|Command|Description|
+|--|--|
+|`npm start`| Watches, compiles and serves files using webpack. |
+|`webpack`| Builds your application and puts it in the /dist folder|
 
+# Contributors 
 
-## Database
-
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
-
-## Licensing
-
-State what the license is and how to find the text version of the license.
+[<img alt="Kristofferson Carillo" src="https://avatars2.githubusercontent.com/u/20582092?v=4&s=400&u=4d7c7d2ddd5ffe8927934ccfa256bb80327c6b20" width="117">](https://github.com/maximegris) |
+:---:
+|[Kristofferson Carillo](https://github.com/peicap)|
