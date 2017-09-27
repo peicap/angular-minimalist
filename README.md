@@ -1,4 +1,4 @@
-[![Angular Minimalist](http://hillik.com/wp-content/uploads/2014/10/happy.png)]
+[<img alt="Kristofferson Carillo" src="http://hillik.com/wp-content/uploads/2014/10/happy.png" width="117">](https://github.com/peicap/angular-minimalist) |
 # Introduction
 
 Build your Angular(+4) with minimal setup using Webpack(+3.1.0), Typescript(2.4.5).  
