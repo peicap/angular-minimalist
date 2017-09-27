@@ -45,7 +45,8 @@ Alright! You can use your Angular4 + Webpack app in a local development environm
 ## Tasks 
 |Task|Status 
 |--|--|
-|Add Router configurations|x|
+|Add Router configurations|[x]|
+|Fix webpack to compile css|[ ]|
 
 # Contributors 
 
