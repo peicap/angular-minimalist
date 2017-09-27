@@ -6,18 +6,16 @@
 An angular manual setup that can be used in small projects. 
 
 ### Prerequisites
-First you need [NodeJs](https://nodejs.org), [Angular4][https://angular.io] to be installed before you can do anything with this setup.
+First you need [NodeJs](https://nodejs.org), [Angular4](https://angular.io) to be installed before you can do anything with this setup.
 
 ## Installing / Getting started
 First we need to install webpack-dev-server globally using npm so we can run the server. 
 ```shell
-User@desktop/projects/angular-minimalist(master)
 $ npm install --global webpack-dev-server
 ```
 
 Then install all the dependencies for the setup to work
 ```
-User@desktop/projects/angular-minimalist(master)
 $ npm install 
 ```
 ## Developing
