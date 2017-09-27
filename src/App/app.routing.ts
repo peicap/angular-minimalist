@@ -7,12 +7,13 @@ import { ModuleWithProviders } from '@angular/core'
  * import { Component } from './route/component/component.ts'
  */
 
+import { SampleComponent } from './route/sample/sample.component'
 
-/**
- * Use this to export the routing module if needed.
- * 
- * export const Routing: ModuleWithProviders = RouterModule.forRoot([
- *      path: '',
- *      component: app-component
- * ])
- */
+
+
+export const APP_ROUTING: ModuleWithProviders = RouterModule.forRoot([
+    {
+        path: '',
+        component: SampleComponent
+    }
+])
