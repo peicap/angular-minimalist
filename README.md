@@ -1,4 +1,4 @@
-[![Angular Logo](https://angular.io/assets/images/logos/angular/angular.png)](https://angular.io/)
+[![Angular Minimalist](http://hillik.com/wp-content/uploads/2014/10/happy.png)]
 # Introduction
 
 Build your Angular(+4) with minimal setup using Webpack(+3.1.0), Typescript(2.4.5).  
