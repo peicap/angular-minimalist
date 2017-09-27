@@ -11,17 +11,22 @@ First you need [NodeJs](https://nodejs.org), [Angular4][https://angular.io] to b
 ## Installing / Getting started
 First we need to install webpack-dev-server globally using npm so we can run the server. 
 ```shell
+User@desktop/projects/angular-minimalist(master)
 $ npm install --global webpack-dev-server
 ```
 
 Then install all the dependencies for the setup to work
 ```
+User@desktop/projects/angular-minimalist(master)
 $ npm install 
 ```
 ## Developing
 
 ### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
+This setup is built with 
+* Angular4 
+* Webpack
+* TypeScript
 
 
 
