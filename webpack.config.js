@@ -57,8 +57,14 @@ module.exports = {
         )
     ],
     devServer: {
-        // when using html 5 history api this will help navigate back to index.html for 404
-        historyApiFallback: true
+        // when using html 5 history api this will help navigate back to index.html for 404npm
+        port: 4200,
+        compress: true,
+        stats: {
+            colors: true,
+            chunks: false,
+            "errors-only": true
+        }
     }
 }
 
