@@ -1,3 +1,7 @@
+/**
+ * Modules are way to construct an app to group components, services, directives, pipes that are related.
+ */
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from "@angular/platform-browser";
 import { Router } from '@angular/router'
