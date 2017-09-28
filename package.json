@@ -4,8 +4,9 @@
   "description": "Angular manual minimal setup. ",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server",
-    "build": "webpack"
+    "start": "node_modules/.bin/webpack-dev-server --open --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js",
+    "build:fast": "node_modules/.bin/webpack-dev-server --open --config ./webpack.fast.js"
   },
   "dependencies": {
     "@angular/common": "^4.0.0",
@@ -36,10 +37,12 @@
     "node-sass": "^4.5.3",
     "rxjs": "^5.0.1",
     "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "to-string-loader": "^1.1.5",
     "typescript": "^2.2.1",
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0",
     "zone.js": "^0.8.4"
   }
 }
