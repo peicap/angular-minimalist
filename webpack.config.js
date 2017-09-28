@@ -12,8 +12,8 @@ module.exports = {
         "styles": "./src/global.scss"
     },
     output: {
-        filename: "[name].js",
-        path: path.resolve(__dirname, 'dist'),
+        filename: "js/[name].js",
+        path: path.resolve(__dirname, 'docs'),
     },
     resolve: {
         /**
@@ -76,7 +76,7 @@ module.exports = {
             root('src'), // location of your src
             {}
         ),
-        new ExtractTextPlugin('styles.css')
+        new ExtractTextPlugin('css/styles.css')
     ],
     devServer: {
         // when using html 5 history api this will help navigate back to index.html for 404npm
