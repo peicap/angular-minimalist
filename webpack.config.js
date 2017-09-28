@@ -6,6 +6,8 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     // Entry file to begin bundle
     entry: {
+        "polyfills": './src/polyfills.ts',
+        "vendors": './src/vendors.ts',
         "main": "./src/main.ts",
         "styles": "./src/global.scss"
     },
