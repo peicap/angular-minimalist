@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core'
 })
 
 export class SampleComponent {
-    key:string = "Hello World"
+    key:string = "This is coming from the sample component with style."
 }
 
