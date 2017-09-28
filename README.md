@@ -40,13 +40,7 @@ Alright! You can use your Angular4 + Webpack app in a local development environm
 |Command|Description|
 |--|--|
 |`npm start`| Watches, compiles and serves files using webpack. |
-|`webpack`| Builds your application and puts it in the /dist folder|
-
-## Tasks 
-|Task|Status 
-|--|--|
-|Add Router configurations|[x]|
-|Fix webpack to compile css|[ ]|
+|`npm build`| Builds your application and puts it in the /dist folder|
 
 # Contributors 
 
