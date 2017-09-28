@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --open --config ./webpack/webpack.dev.js",
-    "build": "webpack --config ./webpack/webpack.prod.js",
-    "build:fast": "node_modules/.bin/webpack-dev-server --open --config ./webpack.fast.js"
+    "build": "webpack --config ./webpack.fast.js",
+    "serve": "node_modules/.bin/webpack-dev-server --open --config ./webpack/webpack.dev.js"
   },
   "dependencies": {
     "@angular/common": "^4.0.0",
