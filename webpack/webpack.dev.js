@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 var path = require('path')
 var merge = require('webpack-merge');
 var common = require('./webpack.common.js')
@@ -8,7 +9,7 @@ function root(__path) {
 
 module.exports = merge( common, {
     output: {
-        path: root('dist'),
+        path: root('../dist'),
         filename: 'js/[name].js',
         chunkFilename: 'js/chunk/[id].chunk.js'
     },
@@ -23,16 +24,6 @@ module.exports = merge( common, {
         }
     },
     plugins: [
-        new ExtractTextPlugin('styles.css'),
-        new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
-            mangle: {
-                keep_fnames: true
-            }
-        }),
-        new webpack.DefinePlugin({
-            'process.env': {
-                'ENV': JSON.stringify(ENV)
-            }
-        }),
+        new ExtractTextPlugin('styles.css')
     ]
 })
