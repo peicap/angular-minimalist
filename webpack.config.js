@@ -1,13 +1,17 @@
 var webpack = require('webpack')
 var path = require('path')
 var htmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     // Entry file to begin bundle
-    entry: "./src/main.ts",
+    entry: {
+        "main": "./src/main.ts",
+        "styles": "./src/global.scss"
+    },
     output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, 'dist')
+        filename: "[name].js",
+        path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
         /**
@@ -31,13 +35,28 @@ module.exports = {
                 loader: ['awesome-typescript-loader', 'angular2-template-loader']
             },
             {
-            /**
-             * raw-loader will handle all require(var.html | var.css) statements created 
-             * by the angular2-template-loader and change it to plain text
-             */
-                test: /\.(css|html)$/,
-                loader: 'raw-loader',
-                exclude: [root('./src/index.html')] // don't include root index.html
+                test: /\.html$/,
+                loader: 'html-loader'
+            },
+            {
+                /**
+                 * to-string-loader - In some cases (e.g. Angular2 @View styles definition) you need to have style as a string. 
+                 * You can cast the require output to a string, e.g.
+                 * css-loader - The css-loader interprets @import and url() like import/require() and will resolve them.
+                 * sass-loader - Compiles sass to CSS
+                 */
+                test: /\.scss$/,
+                exclude: [/node_modules/, root('src', 'global.scss')],
+                use: ['to-string-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                /**
+                 * Extract global scss file
+                 */
+                test: /global\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader!sass-loader'
+                })
             }
         ],
     },
@@ -52,9 +71,10 @@ module.exports = {
              */
              // The (\\|\/) piece accounts for path separators in *nix and Windows
             /angular(\\|\/)core(\\|\/)@angular/,
-            root('./src'), // location of your src
+            root('src'), // location of your src
             {}
-        )
+        ),
+        new ExtractTextPlugin('styles.css')
     ],
     devServer: {
         // when using html 5 history api this will help navigate back to index.html for 404npm
@@ -62,8 +82,8 @@ module.exports = {
         compress: true,
         stats: {
             colors: true,
-            chunks: false,
-            "errors-only": true
+            chunks: true,
+            "errors-only": false
         }
     }
 }
